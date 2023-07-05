@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Project</title>
+    <style>
+        
+        .navv{
+            height: 110px;
+            width: 100%;
+            position: relative; 
+            background-color: antiquewhite;
+        }
+        .nav1{
+            position: absolute;
+            color: gray;
+            top: 0px;
+            right: 180px;
+            font-size: 13px;
+            height: 20px;
+        }
+        .nav2{
+            position: absolute;
+            color: gray;
+            top: 0px;
+            font-size: 13px;
+            right: 100px;
+            width: 20px;
+        }
+        .nav3{
+            position: absolute;
+            top: 20px;
+            right: 270px;
+            font-size: 13px;
+        }
+        .nav4{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 13px;
+        }
+        .navv i{
+            position: absolute;
+            top: 0px;
+            right: 170px;
+          
+        }
+       
+        .navv div{
+            display: flex;
+            justify-content: space-around;
+        }
+        .navv img{
+            position: absolute;
+            width: 160px;
+            height: 110px;
+        }
+       
+        .navigation{
+            position: relative;
+            top: 65px;
+            width: 930px;
+            height: 45px;
+            left: 550px;
+        }
+        .dropdown{
+            position: absolute;
+            width: 20%;
+            left: 100px;
+
+        }
+        .dropbtn{
+            position: absolute;
+            color: blueviolet;
+            width: 100%;
+            height: 30px;
+            font-size: 26px;
+            border: none;
+            border-right: 4px solid gray;
+            background-color: antiquewhite;
+            top: 7px;
+        }
+        .dropdown-content{
+            position: absolute;
+
+            display: flex;
+            top: 35px;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 1;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        .dropdown-content a{
+            display: none;
+            text-decoration: none;
+        }
+        .dropdown:hover .dropdown-content a{
+            display: block;
+           
+        }
+        .dropdown:hover .dropdown-content{
+            background-color: aliceblue;
+            border-top: 6px solid orange;
+            width: 230px;
+            height: 150px;
+            
+        }
+        .dropdown1{
+            position: absolute;
+            width: 16%;
+            left: 400px;
+
+        }
+        .dropbtn1{
+            position: absolute;
+            color: blueviolet;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-right: 4px solid gray;
+            background-color: antiquewhite;
+            font-size: 26px;
+            top: 7px;
+            right: 100px;
+        }
+        .dropdown-content1{
+            position: absolute;
+            display: flex;
+            top: 35px;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 1;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        .dropdown-content1 a{
+            display: none;
+            text-decoration: none;
+        }
+        .dropdown1:hover .dropdown-content1 a{
+            display: block;
+           
+        }
+        .dropdown1:hover .dropdown-content1{
+            background-color: aliceblue;
+            border-top: 6px solid orange;
+            width: 230px;
+            height: 150px;
+            
+        }
+
+
+        .dropdown2{
+            position: absolute;
+            width: 16%;
+            left: 600px;
+
+        }
+        .dropdown4{
+            position: absolute;
+            width: 16%;
+            right: 0px;
+            padding-right: 0px;
+
+        }
+        .dropbtn2{
+            position: absolute;
+            color: blueviolet;
+            width: 100%;
+            height: 30px;
+            border: none;
+            background-color: antiquewhite;
+            border-right: 4px solid gray;
+            font-size: 26px;
+            top: 7px;
+            right: 100px;
+        }
+        .dropdown-content2{
+            position: absolute;
+            display: flex;
+            top: 35px;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 1;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        .dropdown-content2 a{
+            display: none;
+            text-decoration: none;
+        }
+        .dropdown2:hover .dropdown-content2 a{
+            display: block;
+           
+        }
+        .dropdown2:hover .dropdown-content2{
+            background-color: aliceblue;
+            border-top: 6px solid orange;
+            width: 230px;
+            height: 150px;
+            
+        }
+
+        .dropdown3{
+            position: absolute;
+            width: 16%;
+            right: 120px;
+
+        }
+        .dropbtn4{
+            position: absolute;
+            color: blueviolet;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-left: 4px solid gray;
+            background-color: antiquewhite;
+            font-size: 26px;
+            top: 7px;
+            right: 0px;
+            
+        }
+        .dropbtn3{
+            position: absolute;
+            color: blueviolet;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-right: 4px solid gray;
+            background-color: antiquewhite;
+            font-size: 26px;
+            top: 7px;
+            right: 10px;
+            
+        }
+
+
+  .con{  
+            width: 100%;
+            height: 70vh;
+            margin: auto;
+            position: relative;
+            
+        }
+        
+        div img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .circon{
+            position: absolute;
+            width: 50%;
+            left: 40%;
+            bottom: 10px;
+        }
+        .lt{
+            position: absolute;
+            top: 48%;
+            left: 10px;
+            font-size: 45px;
+            color: orange;
+        }
+        .gt{
+            position: absolute;
+            top: 48%;
+            left: 94%;
+            font-size: 45px;
+            color: orange;
+        }
+        .circon .fa-solid{
+            font-size: 25px;
+            color: orange;
+
+        }
+        .circon .fa-regular{
+            font-size: 20px;
+            color: orange;
+        }
+        .image{
+            position: absolute;
+        }
+        .bt{
+            position: absolute;
+            text-align: center;
+            width: 30%;
+            height: 60px;
+            bottom: 50px;
+            left: 30%;
+        }
+        .bt button{
+            font-size: 30px;
+            border-color: grey;
+            color: darkorange;
+            background-color: grey;
+            
+            
+            border: 3px solid blue;
+        }
+        .main{
+            position: relative;
+           
+             width: 100%;
+            height: 60vh;
+        }
+        .main h1{
+            color: rgb(56, 55, 55);
+            text-align: center;
+        }
+        .main1{
+            position: absolute;
+            width: 20%;
+            height: 200px;
+            top: 80px;
+            left: 60px;
+            
+        }
+        .main :hover{
+            background-color: cornflowerblue;
+            
+        }
+        .main1 img{
+            position: absolute;
+            width: 10%;
+            height: 100px;
+            top: 60px;
+            left: 30px;
+        }
+        .main1 h2{
+            position: absolute;
+            left: 70px;
+            top: 40px;
+            text-align: left;
+            color:rgb(56, 55, 55);
+        }
+        .main1 p{
+            position: absolute;
+            left: 70px;
+            top: 100px;
+            text-align: left;
+            font-size: 17px;
+        }
+        .main2{
+            position: absolute;
+            width: 20%;
+            height: 200px;
+            top: 80px;
+            left: 390px;
+        }
+        .main2 img{
+            position: absolute;
+            width: 10%;
+            height: 100px;
+            top: 60px;
+            left: 30px;
+        }
+        .main2 h2{
+            position: absolute;
+            left: 70px;
+            top: 40px;
+            text-align: left;
+            color:rgb(56, 55, 55);
+        }
+        .main2 p{
+            position: absolute;
+            left: 70px;
+            top: 76px;
+            text-align: left;
+            font-size: 17px;
+        }
+        .main3{
+            position: absolute;
+            width: 20%;
+            height: 200px;
+            top: 80px;
+            left: 690px;
+        }
+        .main3 img{
+            position: absolute;
+            width: 10%;
+            height: 100px;
+            top: 60px;
+            left: 30px;
+        }
+        .main3 h2{
+            position: absolute;
+            left: 70px;
+            top: 40px;
+            text-align: left;
+            color:rgb(56, 55, 55);
+        }
+        .main3 p{
+            position: absolute;
+            left: 70px;
+            top: 75px;
+            text-align: left;
+            font-size: 17px;
+        }
+        .main4{
+            position: absolute;
+            width: 20%;
+            height: 200px;
+            top: 80px;
+            left: 990px;
+        }
+        .main4 img{
+            position: absolute;
+            width: 10%;
+            height: 100px;
+            top: 60px;
+            left: 30px;
+        }
+        .main4 h2{
+            position: absolute;
+            left: 70px;
+            top: 40px;
+            text-align: left;
+            color:rgb(56, 55, 55);
+        }
+        .main4 p{
+            position: absolute;
+            left: 70px;
+            top: 72px;
+            text-align: left;
+            font-size: 17px;
+        }
+
+        .healthtalks{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(197, 192, 192);
+            
+        }
+        .healthtalks h1{
+            text-align: center;
+           top: 10px;
+            color: rgb(37, 34, 34);
+        }
+        .ht1{
+            position: absolute;
+            width: 500px;
+            height: 40%;
+            left: 150px;
+        }
+        .ht1:hover{
+            width: 600px;
+            height: 45%;
+        }
+        
+        .ht2{
+            position: absolute;
+            width: 500px;
+            height: 40%;
+            left: 840px;
+        }
+        .ht2:hover{
+            width: 600px;
+            height: 45%;
+        }
+
+        .ht3{
+            position: absolute;
+            width: 500px;
+            height: 40%;
+            top: 385px;
+            left: 450px;
+        }
+        .ht3:hover{
+            width: 600px;
+            height: 45%;
+        }
+
+        #more {
+            display: none;
+        }
+        .readmorecontent{
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background-color: rgb(161, 161, 216);
+        }
+        
+        .test{
+            position: relative;
+            width: 100%;
+            height: 40vh;
+        }
+       
+        .test h1{
+            text-align: center;
+        }
+        .test1{
+            position: absolute;
+            width: 30%;
+            height: 200px;
+            top: 90px;
+            left: 40px;
+            background-color: aliceblue;
+        }
+       
+        .test1 p{
+            font-size: 30px;
+            color: darkorange;
+        }
+        .test1 div{
+            font-size: 20px;
+            color: gray;
+        }
+         .test2{
+            position: absolute;
+            width: 30%;
+            height: 200px;
+            background-color: aliceblue;
+            top: 90px;
+            left: 540px;
+        }
+        .test2 p{
+            font-size: 30px;
+            color: darkorange;
+        }
+        .test2 div{
+            font-size: 20px;
+            color: gray;
+        }
+        .test3{
+            position: absolute;
+            width: 30%;
+            height: 200px;
+            background-color: aliceblue;
+            top: 90px;
+            left: 1100px;
+        }
+        .test3 p{
+            font-size: 30px;
+            color: darkorange;
+        }
+        .test3 div{
+            font-size: 20px;
+            color: gray;
+        }
+        .testimage{
+            position: relative;
+            width: 100%;
+            height: 55vh;
+        }
+
+        #testimg1{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: 0px;
+            left: 5px;
+            animation: demo1 4s infinite;
+        }
+        @keyframes demo1{
+            
+        0%   {left:5px; }
+        25%  { left:110px;}
+        50%  {left:210px; }
+        75%  {left:110px; }
+        100% {left:10px; }
+           
+        }
+        #testimg2{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 450px;
+            animation: demo2 4s infinite;
+        }
+        @keyframes demo2{
+            
+            0%   {left:450px; }
+            25%  { left:550px;}
+            50%  {left:650px; }
+            75%  {left:550px; }
+            100% {left:450px; }
+               
+            }
+       
+        #testimg3{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 900px;
+            animation: demo3 4s infinite;
+        }
+        @keyframes demo3{
+            
+            0%   {left:900px; }
+            25%  { left:1000px;}
+            50%  {left:1100px; }
+            75%  {left:1000px; }
+            100% {left:900px; }
+               
+            }
+        .cont{
+                position: relative;
+                width: 80%;
+                margin: auto;
+                height: 165vh;
+                top: 40px;
+            }
+            .head{
+                display: flex;
+                width: 100%;
+                text-align: center;
+                justify-content: space-between;
+                border: 2px solid darkorange;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 30px;
+                background-color: rgb(235, 226, 226);
+                font-size: 20px;
+            }
+            
+            .head:first-child{
+                
+                color: rgb(65, 63, 63);
+                font-size: 26px;
+                
+            }
+            .body{
+                font-size: 20px;
+                display: none;
+                box-sizing: border-box;
+                width: 100%;
+                text-align: left;
+                padding: 10px 10px;
+                color: rgb(90, 87, 87);
+                border-bottom: 2px solid darkorange;
+                border-left: 2px solid darkorange;
+                border-right: 2px solid darkorange;
+
+            }
+            .fa-circle-plus{
+                color: grey;
+                font-size: 26px;
+            }
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navv">
+        <img src="https://tukuz.com/wp-content/uploads/2020/04/yashoda-hospitals-logo-vector-xs.png"/>
+        <p class="nav1">24/7 APPOINTMENT HELPLINE</p>
+        <p class="nav3">+91 40 4567 4567</p>
+        <i class="fa-thin fa-pipe"></i>
+        <p class="nav2">INTERNATIONAL</p>
+        <p class="nav4">+91 40 6600 0066</p>
+        
+        
+    <div class="navigation">
+        <div class="navi1"><a href="http://127.0.0.1:5500/project.html"><i class="fa-solid fa-house" style="left: 20px;"></i></a></div>
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+              <a href="http://127.0.0.1:5500/projectweb1.html">Awards and Recogniton</a>
+              
+              <a href="http://127.0.0.1:5500/projectwebgallery.html">Gallery</a>
+            </div>
+          </div>
+
+          <div class="dropdown1">
+            <button class="dropbtn1">News</button>
+            <div class="dropdown-content1">
+              <a href="#">Events</a>
+              <a href="#">Medical Updates</a>
+            </div>
+          </div>
+
+          <div class="dropdown2">
+            <button class="dropbtn2">locations</button>
+            <div class="dropdown-content2">
+              <a href="#">Secunderabad</a>
+              <a href="#">Malakpet</a>
+              <a href="#">Hitec City</a>
+            </div>
+          </div>
+
+          <div class="dropdown3">
+            <button class="dropbtn3"><a href="http://127.0.0.1:5500/login.html" style="text-decoration: none; color:blueviolet;">Login</a></button>
+            
+          </div>
+          <div class="dropdown4"><button class="dropbtn4"><a href="http://127.0.0.1:5500/registernow.html" style="text-decoration: none; color:blueviolet;">Register now</a></button> </div>
+
+          
+       
+    </div>
+</nav>
+
+<div class="con">
+    <img  class="image" src="1.jpg"/>
+    <div class="lt" onclick="dec()"><i class="fa-solid fa-less-than"></i></div>
+    <div class="gt" onclick="fun()"><i class="fa-solid fa-greater-than"></i></div>
+
+    <div class="bt">
+        <button></button>
+    </div>
+    
+    <div class="circon">
+        <i class="fa-solid fa-circle" onclick="fun1(0)"></i>
+        <i class="fa-regular fa-circle" onclick="fun1(1)"></i>
+        <i class="fa-regular fa-circle" onclick="fun1(2)"></i>
+        <i class="fa-regular fa-circle" onclick="fun1(3)"></i>
+        
+    </div>
+</div>
+<script>
+    let arr=["1.jpg","2.jpg","3.jpg","4.jpg"]
+    let hd=["","","Know more","Book now"]
+    let j=0
+    let cr=document.getElementsByClassName('fa-circle')
+    function fun()
+    {
+        cr[j].className='fa-regular fa-circle'
+        j++
+        if(j>=4)
+        {
+            j=0
+        }
+        document.getElementsByClassName('image')[0].src=arr[j]
+        document.querySelector('.bt button').innerHTML=hd[j]
+        cr[j].className='fa-solid fa-circle'
+    
+    }
+    function dec()
+    {
+        cr[j].className='fa-regular fa-circle'
+        j--
+        if(j<0)
+        {
+            j=3
+        }
+        document.getElementsByClassName('image')[0].src=arr[j]
+        document.querySelector('.bt button').innerHTML=hd[j]
+        cr[j].className='fa-solid fa-circle'
+    }
+    
+    function fun1(e)
+    {
+        cr[j].className='fa-regular fa-circle'
+        document.getElementsByClassName('image')[0].src=arr[e]
+        j=e
+        document.querySelector('.bt button').innerHTML=hd[j]
+        cr[j].className='fa-solid fa-circle'
+    }
+    setInterval(fun,5000)
+    
+</script>
+<div class="main">
+    <h1>CENTERS OF EXCELLENCE</h1>
+    <div class="main1"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/the-best-team-of-heart-specialists.png"/><h2>HEART TRANSPLANT</h2> <p>The best team of Heart Specialists and Surgeons available 24X7</p></div>
+    <div class="main2"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/center-for-cardiothoracic-surgery.png"/><h2>CT SURGERY </h2><p>The best center for Minimally Invasive Surgeries and Transplants.</p></div>
+    <div class="main3"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/neurosurgery-hospital-in-hyderabad.png"><h2>NEUROSCIENCE</h2><p> The Neuro Institute is a regional leader in treating neurological disorders</p></div>
+    <div class="main4"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/best-cancer-hospital-in-hyderabad.png"/><h2>CANCER</h2><p> World Leaders in Oncology Care.</p></div>
+</div>
+<div class="healthtalks">
+    <h1>HEALTH TALKS</h1>
+    <DIV class="ht1" id="healthtalk1"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Know-Your-Doctor-session-with-%E2%80%93-Dr.-Vamsi-Krishna-Mutnuri.jpg"/> </DIV>
+    <div class="ht2" id="healthtalk2"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Embracing-Womanhood-Dr.-G.-Swarnalatha.jpg"/></div>
+    <div class="ht3" id="healthtalk3"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Know-Your-Doctor-%E2%80%93-Dr.-K.-Sreekanth.jpg"/></div>
+</div>
+<script type="text/javascript">
+    document.getElementById("healthtalk1").onclick = function () {
+        location.href = "http://127.0.0.1:5500/healthtalk1.html";
+    }
+    document.getElementById("healthtalk2").onclick = function () {
+        location.href = "http://127.0.0.1:5500/healthtalk2.html";
+    }
+    document.getElementById("healthtalk3").onclick = function () {
+        location.href = "http://127.0.0.1:5500/healthtalk3.html";
+    }
+</script>
+
+
+<div class="readmorecontent">
+<div class="readmc1">
+<h2>INNOVATION & MEDICAL UPDATES</h2>
+<p>Yashoda Hospitals successfully employed ECMO to revive a 58 year old with severe COVID-19...</p>
+<button><a href="http://127.0.0.1:5500/readmore1.html" style="text-decoration: none; color:blueviolet;">Read more</a></button>
+
+</div>
+</div>
+
+
+
+<div class="test">
+    <h1>PATIENT TESTIMONIALS</h1>
+    <div class="test1"><p>BHARAT</p><DIV>Treatment for: Axillary Artery Injury<br/> Treated by: Dr.Nishan Reddy B<br/> Procedure: Repair of Damaged Axillary Artery<br/> Patient Location: Karnataka</DIV></div>
+    <div class="test2"><p>Mrs.Ekeh Ogechi Chioma Joedicta</p><DIV>Treatment for: Acute Lymphocytic Leukemia<br/> Treated by: Dr.Ganesh Jaishetwar<br/> Procedure:Allogeneic Bone Marrow Transplant<br/> Patient Location: Nigeria</DIV></div>
+    <div class="test3"><p>Mr. Gaddam Ravi</p><DIV>Treatment for: Knee Arthritis(Right Leg)<br/> Treated by: Dr.Manoj Chakravorthy<br/> Procedure: Total Knee Replacement Surgery<br/> Patient Location: Hanmakonda</DIV></div>
+</div>
+<div class="testimage">
+    <p id="testimg1"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/480-360-60-min.jpg"/></p>
+    <p id="testimg2"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/480-360-92-min.jpg"/></p>
+    <p id="testimg3"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/480-360-55-min.jpg"/></p>
+</div>
+<div class="cont">
+    <div class="item1">
+        <div class="head">
+            <div>Why Yashoda Hospitals known as the best hospital in Hyderabad</div>
+            <div><i class="fa-solid fa-circle-plus" onclick="func(0,this)"></i></div>
+        </div>
+        <div class="body">
+            Yashoda Hospital is one among the Best Multispecialty Hospitals in Hyderabad, committed to offering inimitable and evidence based health care services. We are a leading and integrated healthcare center with multiple Centers of Excellence for super specialities including Heart, CT surgery, Neuroscience, Cancer, Liver, Multi-organ transplants, Bones & joints, Nephrology, Robotic sciences, Spine surgery, Mother & Child and Fertility.<br/>
+
+            With advanced facilities and treatments, our hospital is considered as one among the Best Hospitals in Hyderabad. Well-equipped with 2400 Beds, Intensive care unit/operation theatre, mobile ultrasound, X-ray, 2D echo etc for critically ill patients, we have multispecialty hospitals located in Somajiguda, Secunderabad, and Malakpet, Hyderabad. This provides accessibility to our 24/7 emergency care services that include blood bank, laboratory, diagnostics, and ventilator management. An upcoming hospital in Hitec City spanning over 2 million sq ft, will add 2000 more beds and is likely to be the biggest hospital in India.<br/>
+
+            With a multi-disciplinary team of experts, we have adopted latest advances in treatments, such as stereotactic radiosurgery, HIPEC, triple f radiosurgery, robotic surgery, VATS, capsule endoscopy, TAVR, TMVR, enterocytoscopy, endocytoscopy, retroperitoneoscopic surgery, arthroscopy, bone marrow transplant, heart transplant, kidney transplant, liver transplant, etc.<br/>
+
+            Yashoda Hospitals, Hyderabad provides for Comprehensive care, Clinical Excellence, Qualified and trained doctors and cutting-edge technology which is available to treat high-risk health conditions apart from managing pre-existing and chronic conditions, which makes us one of the Top Hospitals in Hyderabad. Our specialist team consisting of Cardiologists and Cardio Thoracic surgeons, Neurologists and Neuro Surgeons, Oncologists, Gastroenterologists, Dermatologists, Orthopedicians, Endocrinologists, Ophthalmologists, Nephrologists, Rheumatologists, ENT Surgeons, Liver transplant surgeons, Critical care specialists, Pulmonologists, Radiologists, Plastic surgeons, Urologist, and many more super speciality doctors who strive to provide the best and advanced treatments and procedures.<br/>
+
+            Look no further if you want the Best Hospital in Hyderabad which offers patient centric care, latest in advanced technologies and the complete spectrum of medical specialities.
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="head">
+            <div>When should you go to the hospital</div>
+            <div><i class="fa-solid fa-circle-plus" onclick="func(1,this)"></i></div>
+        </div>
+        <div class="body">
+            A person should rush or go to the nearest hospital when he has a medical emergency, for eg. difficulty in breathing, shortness of breath, pain or pressure in the chest or upper abdominal region, fainting, sudden dizziness or weakness. You can also visit a doctor or seek online consultations for medical issues that do not require immediate medical attention.
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="head">
+            <div>How To Find Best Hospital in Hyderabad Location</div>
+            <div><i class="fa-solid fa-circle-plus" onclick="func(2,this)"></i></div>
+        </div>
+        <div class="body">
+            To find the best hospital in Hyderabad you should first determine the care you need and the hospitals present around you. Think about your personal and financial constraints if any. Discuss your hospital options, and choose a hospital that fits your criteria wholistically.
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="head">
+            <div>What is Multi Super Speciality Hopsital</div>
+            <div><i class="fa-solid fa-circle-plus" onclick="func(3,this)"></i></div>
+        </div>
+        <div class="body">
+            A Multi-speciality Hospital has facilities for most conditions and diseases to be taken care of by an expert team of doctors and specialists. The patients are entirely taken care of in air-conditioned rooms and canteens inside with personalized care.
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="head">
+            <div>Why Yashoda Hospitals Called The Best Multispecialty Hospital in Hyderabad</div>
+            <div><i class="fa-solid fa-circle-plus" onclick="func(4,this)"></i></div>
+        </div>
+        <div class="body">
+        
+Yashoda Hospitals is known as the best multispeciality hospital since healthcare for the people in their diverse medical needs. Their comprehensive health care team of specialized doctors, round-the-clock nursing staff and paramedics are equipped with the latest medical innovations and state-of-the-art infrastructure. Yashoda Hospitals has an excellent Transplant Program for Heart, Lung, Liver and Kidneys and has contributed to a large number of life saving surgeries in the last decade.
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="head">
+            <div>Why Choose Yashoda Hospitals</div>
+            <div><i class="fa-solid fa-circle-plus" onclick="func(5,this)"></i></div>
+        </div>
+        <div class="body">
+            Yashoda Hospitals constantly works to provide patients with the best healthcare service by perfectly blending revolutionary technology, best medical expertise and advanced procedures. The needs of the patients have always guided the Group towards delivering comprehensive care. They provide apt medical diagnosis and treatment for diseases, trauma, and emergencies across practically every medical discipline.
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="head">
+            <div>Why Choose Yashoda Hospitals</div>
+            <div><i class="fa-solid fa-circle-plus" onclick="func(6,this)"></i></div>
+        </div>
+        <div class="body">
+            Yashoda Hospitals constantly works to provide patients with the best healthcare service by perfectly blending revolutionary technology, best medical expertise and advanced procedures. The needs of the patients have always guided the Group towards delivering comprehensive care. They provide apt medical diagnosis and treatment for diseases, trauma, and emergencies across practically every medical discipline.
+        </div>
+    </div>
+</div>
+<script>
+    let i=undefined
+    let ar=document.getElementsByClassName("body")
+    function func(id,e)
+    {
+        if(i==undefined)
+        {
+            ar[id].style.display="block";
+            
+            i=id
+        }
+        else{
+            if(i==id)
+            {
+                if(ar[i].style.display=="none")
+                {
+                    ar[i].style.display="block";
+                    
+                }
+                else{
+                    ar[i].style.display="none";
+                    
+                }
+            }
+            else{
+                ar[i].style.display="none";
+                    
+                    ar[id].style.display="block";
+                  
+                   i=id
+            }
+        }
+    }
+</script>
+</body>
+</html>

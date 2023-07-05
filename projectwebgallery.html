@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .child1navv{
+            height: 110px;
+            width: 100%;
+            position: relative; 
+            background-color: antiquewhite;
+        }
+        .child1navv1{
+            position: absolute;
+            color: gray;
+            top: 0px;
+            right: 180px;
+            font-size: 13px;
+            height: 20px;
+        }
+        .child1navv2{
+            position: absolute;
+            color: gray;
+            top: 0px;
+            font-size: 13px;
+            right: 100px;
+            width: 20px;
+        }
+        .child1navv3{
+            position: absolute;
+            top: 20px;
+            right: 270px;
+            font-size: 13px;
+        }
+        .child1navv4{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 13px;
+        }
+        .child1navv i{
+            position: absolute;
+            top: 0px;
+            right: 170px;
+          
+        }
+       
+       
+        .child1navv img{
+            position: absolute;
+            width: 160px;
+            height: 110px;
+        }
+        .child1navv button{
+            position: absolute;
+            right: 250px;
+            top: 60px;
+            height: 45px;
+            width: 120px;
+            font-size: 35px;
+            color: white;
+            background-color: orange;
+            border-color: orange;
+
+        }
+        .galleryhead{
+            position: relative;
+            width: 100%;
+            height: 60vh;
+        }
+        .galleryhead h1{
+            position: absolute;
+            left: 40%;
+        }
+        .galleryhead img{
+            position: absolute;
+            width: 85%;
+            height: 50vh;
+            top: 57px;
+            left: 9%;
+        }
+        .galleryhead2{
+            position: relative;
+            width: 100%;
+            height: 250vh;
+            display: grid;
+        }
+        .galleryhead2 h1{
+            position: absolute;
+            left: 560px;
+        }
+        .gallery1{
+            position: absolute;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            display: grid;
+            column-gap: 13px;
+            row-gap: 20px;
+            padding: 10px;
+            width: 97%;
+            top: 50px;
+        }
+        .gridgallery{
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .gallery1 div{
+            height: 300px;
+        }
+        .galleryhead2 h1{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <nav class="child1navv">
+        <img src="https://tukuz.com/wp-content/uploads/2020/04/yashoda-hospitals-logo-vector-xs.png"/>
+        <button id="myButton">Home</button>
+        <p class="child1navv1">24/7 APPOINTMENT HELPLINE</p>
+        <p class="child1navv3">+91 40 4567 4567</p>
+        <i class="fa-thin fa-pipe"></i>
+        <p class="child1navv2">INTERNATIONAL</p>
+        <p class="child1navv4">+91 40 6600 0066</p>
+        </nav>
+        
+
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "http://127.0.0.1:5500/project.html";
+            }
+        </script>
+
+        <div class="galleryhead"><h1>YASHODA HOSPITALS</h1><img src="2.jpg"/></div>
+        <DIV class="galleryhead2">
+            <h1><b>INFRASTRUCTURE</b></h1>
+            <DIV class="gallery1">
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Lobby-5-400x284.jpg" width="240px" height="200px"/><br/>Lobby</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/infrastructure_img15-600x426.jpg" width="240px" height="200px"/><br/>VIPRoom</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/infrastructure_img10-600x426.jpg" width="240px" height="200px"/><br/>Patient Care Facilities</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Cath-lab-2-400x284.jpg" width="240px" height="200px"/><br/>Cath Lab</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Cath-Lab-colour4-copy-400x284.jpg" width="240px" height="200px"/><br/>Cath Lab Colour</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/AMC-6-400x284.jpg" width="240px" height="200px"/><br/>AMC</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/AMC-2-400x284.jpg" width="240px" height="200px"/><br/>AMC</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/infrastructure_img4-600x426.jpg" width="240px" height="200px"/><br/>Diagnostics Infrastructure</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Operation-Theater-400x284.jpg" width="240px" height="200px"/><br/>Operation Theatre</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/infrastructure_img11-600x426.jpg" width="240px" height="200px"/><br/>Rapid Arc (Radiotherapy) For Cancer</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Lobby-2-400x284.jpg" width="240px" height="200px"/><br/>Lobby</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/infrastructure_img2-600x426.jpg" width="240px" height="200px"/><br/>CT Scan</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Dialasis-400x284.jpg" width="240px" height="200px"/><br/>Dialasis</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Lab3-400x284.jpg" width="240px" height="220px"/><br/>Lab</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/infrastructure_img1-600x426.jpg" width="240px" height="200px"/><br/>Cath Lab</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/Linear-Accelerator-400x284.jpg" width="240px" height="200px"/><br/>Linear Accelerator</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/MRI-2-400x284.jpg" width="240px" height="200px"/><br/>MRI</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/O-T-3-400x284.jpg" width="240px" height="200px"/><br/>OT</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/O-P-1-400x284.jpg" width="240px" height="200px"/><br/>OP</div>
+                <div class="gridgallery"><img src="https://cdn.yashodahospitals.com/wp-content/uploads/VIP-Room-1-400x284.jpg" width="240px" height="200px"/><br/>VIP Room</div>
+
+                
+
+            </DIV>
+        </DIV>
+
+</body>
+</html>
